@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 30 43% 97%; /* warm sand */
+    --foreground: 174 25% 20%; /* deep teal */
+  }
+
+  .dark {
+    --background: 174 12% 12%; /* #1E2624 */
+    --foreground: 48 30% 93%; /* #F2EFE9 */
+  }
+
+  * {
+    @apply border-cloud;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-sand text-teal dark:bg-dark-bg dark:text-dark-text font-sans antialiased;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  h1, h2, h3 {
+    @apply font-serif;
+  }
+}
+
+@layer utilities {
+  .safe-bottom {
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+
+  .no-scrollbar {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .skeleton {
+    @apply animate-shimmer rounded-input bg-cloud/40 dark:bg-dark-card/70;
+    background-image: linear-gradient(
+      90deg,
+      transparent 0%,
+      rgba(255, 255, 255, 0.35) 50%,
+      transparent 100%
+    );
+    background-size: 200% 100%;
+  }
+}
+
+/* Menghormati preferensi pengguna yang sensitif terhadap gerakan —
+   animasi dekoratif dimatikan, transisi fungsional tetap instan/aman. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

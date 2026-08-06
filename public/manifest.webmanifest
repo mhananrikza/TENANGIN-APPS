@@ -1,0 +1,59 @@
+{
+  "name": "TENANGIN — Teman Parenting Tanpa Bentakan",
+  "short_name": "TENANGIN",
+  "description": "Teman Parenting Tanpa Bentakan: ide aktivitas anak, perjalanan Bertumbuh, dan Teman AI yang selalu mendengarkan. Semua data tersimpan di perangkat Anda.",
+  "id": "/",
+  "start_url": "/?source=pwa",
+  "scope": "/",
+  "display": "standalone",
+  "display_override": ["standalone", "minimal-ui", "browser"],
+  "orientation": "portrait-primary",
+  "background_color": "#FAF6F0",
+  "theme_color": "#FAF6F0",
+  "lang": "id",
+  "dir": "ltr",
+  "categories": ["parenting", "lifestyle", "education", "health"],
+  "prefer_related_applications": false,
+  "icons": [
+    { "src": "/icons/icon-48.png", "sizes": "48x48", "type": "image/png", "purpose": "any" },
+    { "src": "/icons/icon-72.png", "sizes": "72x72", "type": "image/png", "purpose": "any" },
+    { "src": "/icons/icon-96.png", "sizes": "96x96", "type": "image/png", "purpose": "any" },
+    { "src": "/icons/icon-128.png", "sizes": "128x128", "type": "image/png", "purpose": "any" },
+    { "src": "/icons/icon-144.png", "sizes": "144x144", "type": "image/png", "purpose": "any" },
+    { "src": "/icons/icon-152.png", "sizes": "152x152", "type": "image/png", "purpose": "any" },
+    { "src": "/icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "/icons/icon-256.png", "sizes": "256x256", "type": "image/png", "purpose": "any" },
+    { "src": "/icons/icon-384.png", "sizes": "384x384", "type": "image/png", "purpose": "any" },
+    { "src": "/icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "/icons/icon-maskable-48.png", "sizes": "48x48", "type": "image/png", "purpose": "maskable" },
+    { "src": "/icons/icon-maskable-72.png", "sizes": "72x72", "type": "image/png", "purpose": "maskable" },
+    { "src": "/icons/icon-maskable-96.png", "sizes": "96x96", "type": "image/png", "purpose": "maskable" },
+    { "src": "/icons/icon-maskable-144.png", "sizes": "144x144", "type": "image/png", "purpose": "maskable" },
+    { "src": "/icons/icon-maskable-192.png", "sizes": "192x192", "type": "image/png", "purpose": "maskable" },
+    { "src": "/icons/icon-maskable-384.png", "sizes": "384x384", "type": "image/png", "purpose": "maskable" },
+    { "src": "/icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+  "shortcuts": [
+    {
+      "name": "Teman AI",
+      "short_name": "Teman AI",
+      "description": "Curhat dengan Teman AI TENANGIN",
+      "url": "/companion?source=shortcut",
+      "icons": [{ "src": "/icons/icon-192.png", "sizes": "192x192", "type": "image/png" }]
+    },
+    {
+      "name": "Planner Harian",
+      "short_name": "Planner",
+      "description": "Lihat & atur rencana harian",
+      "url": "/planner?source=shortcut",
+      "icons": [{ "src": "/icons/icon-192.png", "sizes": "192x192", "type": "image/png" }]
+    },
+    {
+      "name": "Ide Aktivitas",
+      "short_name": "Aktivitas",
+      "description": "Cari ide aktivitas untuk anak",
+      "url": "/aktivitas?source=shortcut",
+      "icons": [{ "src": "/icons/icon-192.png", "sizes": "192x192", "type": "image/png" }]
+    }
+  ]
+}
