@@ -2,7 +2,7 @@
 // Dipusatkan di satu tempat supaya model, error handling, dan timeout konsisten
 // di semua API route (companion, memory, reflection, activity).
 
-export const CHAT_MODEL = "gemini-2.5-flash";
+export const CHAT_MODEL = "gemini-3.1-flash-lite";
 
 const GEMINI_ENDPOINT = `https://generativelanguage.googleapis.com/v1beta/models/${CHAT_MODEL}:generateContent`;
 
